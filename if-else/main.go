@@ -3,15 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	// sum := 24
-	// if sum > 20 {
-	// 	if sum >= 22 {
-	// 		fmt.Println("you are greater then 24")
-	// 	}
-	// 	fmt.Println("you are greater then 20")
-	// }else{
-	// 	fmt.Println("you are less then 20")
-	// }
+	sum := 24
+	if sum > 20 {
+		if sum >= 22 {
+			fmt.Println("you are greater then 24")
+		}
+		fmt.Println("you are greater then 20")
+	}else{
+		fmt.Println("you are less then 20")
+	}
 
 	// drive_car := true
 
