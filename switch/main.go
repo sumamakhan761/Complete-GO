@@ -50,8 +50,9 @@ func main() {
 		}
 	}
 
-	whoAmI("golang")
 	whoAmI(5)
+	whoAmI("golang")
+	whoAmI("go")
 	whoAmI(true)
 	whoAmI(1.345)
 
