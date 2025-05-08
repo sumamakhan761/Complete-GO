@@ -22,9 +22,5 @@ func main() {
 	// 	fmt.Println("you can't drive a card becauses you age is" , age)
 	// }
 
-
-	// go dost not have ternary operater , you will have to use normal if else
-
-
-
+	// go does not have ternary operater , you will have to use normal if else
 }
