@@ -50,9 +50,14 @@ func main() {
 		}
 	}
 
-	whoAmI("golang")
+	var whatYourName = func (string)  {
+		fmt.Println("sumama")
+	}
+	whatYourName("sumama")
+	
 	whoAmI(5)
+	whoAmI("golang")
+	whoAmI("go")
 	whoAmI(true)
 	whoAmI(1.345)
-
 }

@@ -7,7 +7,7 @@ func main() {
 	// fmt.Println(1+1);
 	// fmt.Println("1" + "1");
 	// fmt.Println(1*1);// mul
-	// fmt.Println(10.5);// floars
+	// fmt.Println(10.5);// floats
 	// fmt.Println(true);// boolean
 
 	// variable 
@@ -27,7 +27,9 @@ func main() {
 
 	// var name string
 	// name = "golang"
+	// name2:= "Go"
 
+	// fmt.Println(name2)
 	// fmt.Println(name)
 
 
@@ -42,4 +44,12 @@ func main() {
 	)
 
 	fmt.Println(host,port)
+
+	const(
+		name = "sumama"
+		age = "18"
+		language = "Go"
+	)
+
+	fmt.Println("name -> " + name, "age -> " + age ,"language -> " + language)
 }
