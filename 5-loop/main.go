@@ -35,6 +35,12 @@ func main() {
 	// shortent
 	for i:=range 21 {
 		if(i > sum){
+			if(i == 3){ 
+				continue
+			}
+			if(i == 20){
+				break;
+			}
 			fmt.Println("greater then 20 number are" , i)
 			}else{
 			fmt.Println("lesser then 20 number are" , i)
