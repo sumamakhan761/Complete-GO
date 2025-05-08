@@ -13,14 +13,15 @@ func main() {
 		fmt.Println("you are less then 20")
 	}
 
-	// drive_car := true
+	drive_car := true
 
 	// we can declare variable inside if construnct a if-else fairly normal
-	// if age := 45 ; age > 18 && drive_car {
-	// 	fmt.Println("you can drive a card becauses you age is" , age)
-	// }else{
-	// 	fmt.Println("you can't drive a card becauses you age is" , age)
-	// }
 
+	if age := 45 ; age > 18 && drive_car {
+		fmt.Println("you can drive a card becauses you age is" , age)
+
+	}else{
+		fmt.Println("you can't drive a card becauses you age is" , age)
+	}
 	// go does not have ternary operater , you will have to use normal if else
 }
