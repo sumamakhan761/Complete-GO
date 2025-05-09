@@ -12,7 +12,7 @@ import "fmt"
 // by refrence
 func changeNum(num *int) {
 	*num = 5//derefrane 
-	fmt.Println("In change Num" , num)
+	fmt.Println("In change Num" , *num)
 }
 
 func main() {
