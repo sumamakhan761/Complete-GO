@@ -7,6 +7,7 @@ import "fmt"
 // 		fmt.Println(item)
 // 	}
 // }
+
 func printSlice[T comparable, V string](items []T , name V){ // here we give generic type
 	for _, item := range items{
 		fmt.Println(item, name)
