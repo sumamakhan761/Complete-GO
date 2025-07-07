@@ -9,25 +9,25 @@ func main(){
 	// - not fixed size, use slice like what 
 	// - size dynamical
 	// most user construct in go
-	//  useful methods on the arrays
+	// useful methods on the arrays
 	// we do in the java -> in java we use arraylist 
 	// var nums []int //uninitialized slice is nil (nil means null)
 	// fmt.Println(nums == nil)
 	// fmt.Println(len(nums))
 
-	// var nums = make([]int , 0, 2) // here we added a size in second argument third argument is the intial capacity  
-	// fmt.Println(nums)
+	var nums = make([]int , 0, 2) // here we added a size in second argument third argument is the intial capacity
+	fmt.Println(nums)
 	// fmt.Println(nums == nil)
 	// fmt.Println(len(nums))
-	// fmt.Println(cap(nums)) // max numbers of elements can fit
+	// fmt.Println(cap(nums)) // max numbers of elements can fit -> bytes -> 4 if 4 is full -> 8 -> 16 -> 32 -> 64
 	// nums = append(nums , 1)
 	// nums = append(nums , 2)
 	// nums = append(nums , 3)
 	// fmt.Println(nums)
 	// fmt.Println(cap(nums))// now you see when you run now capacity become a double of len(nums)
-
+	
 	// another way
-	// nums1 := []int{} 
+	// nums1 := []int{}
 	// fmt.Println(nums1)
 	// fmt.Println(nums1 == nil)
 	// fmt.Println(len(nums1))
@@ -39,8 +39,7 @@ func main(){
 	// fmt.Println(nums1)
 	// fmt.Println(cap(nums1))
 
-	// copy fucntion
-
+	// copy function
 	// var nums2 = make([]int , 0, 5)
 	// nums2 = append(nums2 , 1)
 	// nums2 = append(nums2 , 2)

@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	auth.LoginWithCredentials("codersgyan", "secret")
+	auth.LoginWithCredentials("sumama", "secret")
 	session := auth.GetSession()
 
 	fmt.Println("session", session)

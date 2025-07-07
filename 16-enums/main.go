@@ -24,5 +24,5 @@ func changeOrderStatus (status OrderStatus){
 	fmt.Println("changing order status" , status)
 }
 func main()  {
-	changeOrderStatus(Recieved)
+	changeOrderStatus(Process)
 }

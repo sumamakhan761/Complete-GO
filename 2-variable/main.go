@@ -39,7 +39,7 @@ func main() {
 	// fmt.Println(c)
 
 	const(
-		host = "localhost"
+	  host = "localhost"
 		port = 5000
 	)
 

@@ -38,41 +38,37 @@ func emailSender(emailChan <-chan string, done chan<- bool){//emailChan <-chan f
 
 func main() {
 	// messageChan := make(chan string)
-
 	// messageChan <- "ping"// blocking 
-
 	// msg := <- messageChan
 	// fmt.Println(msg)
-
 	// numChan := make(chan int)
 	// go processNum(numChan)
+
 
 	// for {
 	// 	numChan <- rand.Intn(100)
 	// }// for infinite loop no need a time sleep
 	// time.Sleep(time.Second * 2)
 
+
 	// result := make(chan int)
 	// go sum(result , 3, 5)
-
 	// ans := <-result // blocking channel so that no need to added a time sleep
-	  
 	// fmt.Println(ans)
+
+
 
 	// done := make(chan bool)
 	// go task(done)
-
 	// <- done // block 
+
 
 	//before we are using unbuffer channel
 
 	// now starting a buffer channel
-
 	// emailChan := make(chan string, 100)//we can add data limited 100
 	// done := make(chan bool)
-
 	// go emailSender(emailChan , done)
-
 	// for i:=0 ; i < 5 ; i++{
 	// 	emailChan <- fmt.Sprintf("%d@gmail.com" , i)
 	// }
@@ -82,22 +78,22 @@ func main() {
 	// <- done
 
 
-	// chan1 := make(chan int)
-	// chan2 := make(chan string)
+	chan1 := make(chan int)
+	chan2 := make(chan string)
 
-	// go func () {
-	// 	chan1 <- 10
-	// }()
-	// go func ()  {
-	// 	chan2 <- "ping"
-	// }()
+	go func () {
+		chan1 <- 10
+	}()
+	go func ()  {
+		chan2 <- "ping"
+	}()
 
-	// 	for i:= 0; i < 2 ; i++{
-	// 		select {
-	// 		case chan1Val := <- chan1:
-	// 			fmt.Println("received data from chan1", chan1Val)
-	// 		case chan2Val := <- chan2:
-	// 			fmt.Println("received data from chan1", chan2Val)
-	// 		}
-	// 	}	
+		for i:= 0; i < 2 ; i++{
+			select {
+			case chan1Val := <- chan1:
+				fmt.Println("received data from chan1", chan1Val)
+			case chan2Val := <- chan2:
+				fmt.Println("received data from chan2", chan2Val)
+			}
+		}	
 } 

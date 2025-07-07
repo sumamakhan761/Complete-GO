@@ -20,6 +20,7 @@ type order struct {
 	createdAt time.Time // nanosecond precision
 	customer // here added a customer struct
 }
+
 // receiver type
 func(o *order) changeStatus(status string){
 	o.status = status // struct do derefrencing not needed again give a star * 
@@ -63,7 +64,7 @@ func main(){
 	// myOrder.changeStatus("confirmed")
 	// fmt.Println(myOrder)
 
-	// myOrder2 := order{
+	// myOrder2 := order {
 	// 	id:        "2",
 	// 	amount:    100,
 	// 	status:    "delivered",
@@ -88,6 +89,4 @@ func main(){
 	fmt.Println(myOrder.customer.phone)
 	myOrder.customer.name = "usama"
 	fmt.Println(myOrder.customer.name)
-
-
 }
