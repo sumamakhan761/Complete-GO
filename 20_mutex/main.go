@@ -18,6 +18,7 @@ func (p *post) inc(wg *sync.WaitGroup) {
 	}()
 	p.mu.Lock()
 	p.views += 1
+	fmt.Println(p.views)
 }
 
 func main() {

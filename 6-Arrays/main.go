@@ -8,11 +8,11 @@ func main()  {
 	var n = len(nums)
 	fmt.Println(n) // arrary length  
 
-	for i:=range(len(nums)) {
+	for i := range(len(nums)) {
 		fmt.Println(i)
 	}
 
-	for i:=range(len(nums)) {
+	for i := range(len(nums)) {
 		nums[i] = i
 	}
 	fmt.Println(nums)
@@ -29,6 +29,7 @@ func main()  {
 	fmt.Println(str)
 
 	// manully assigning value or say to decalring it in single line
+	// var number = [3]int{1,2,3}
 	number:=[3]int{1,2,3}
 	fmt.Println(number)
 
@@ -38,6 +39,6 @@ func main()  {
 
 	// - fixed size, use array
 	// - memory optimazation
-	//  - constant time access
+	// - constant time access
 
 }

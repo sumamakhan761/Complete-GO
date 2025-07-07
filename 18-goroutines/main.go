@@ -13,7 +13,7 @@ func task(id int , w *sync.WaitGroup) {//using a pointer
 func main() {
 	// creting wait group
 	var wg sync.WaitGroup
-	for i:=0; i<=10; i++{
+	for i:=0; i<=20000; i++{
 		wg.Add(1)
 		go task(i , &wg) //multiple threads working same time
 

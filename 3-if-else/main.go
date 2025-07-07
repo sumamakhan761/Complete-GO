@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	sum := 24
+	sum := 27
 	if sum > 20 {
-		if sum >= 22 {
+		if sum > 24 {
 			fmt.Println("you are greater then 24")
 		}
 		fmt.Println("you are greater then 20")

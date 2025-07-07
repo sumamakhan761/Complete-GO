@@ -19,8 +19,8 @@ func (p payment) makePayment(amount float32) {
 	p.gateway.pay(amount)
 }
 
-func (p payment) refundPayment(amount float32) {
-	p.gateway.pay(amount)
+func (p payment) refundPayment(amount float32, account string) {
+	p.gateway.refund(amount, account)
 }
 
 type razorpay struct{}
@@ -49,7 +49,7 @@ func (p paypal) pay(amount float32) {
 }
 
 func (p paypal) refund(amount float32, account string) {
-		fmt.Println("refund payment using paypal", amount)
+	fmt.Println("refund payment using paypal", amount)
 }
 
 func main() {
@@ -62,5 +62,5 @@ func main() {
 		gateway: paypalGw,
 	}
 	newPayment.makePayment(100)
-	newPayment.refundPayment(90)
+	newPayment.refundPayment(90, "123453256")
 }

@@ -17,6 +17,7 @@ func changeNum(num *int) {
 
 func main() {
 	num := 1
+
 	// changeNum(num)
 	// fmt.Println("Memory address" , num)
 	// fmt.Println("after changeNum in main" , num)

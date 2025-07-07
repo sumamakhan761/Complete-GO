@@ -6,9 +6,10 @@ import (
 )
 
 func main() {
+	
 		// switch
 		// i:= 20
-		// switch i {
+		// switch i {}
 		// case 1:
 		// 	fmt.Println(i)
 		// case 5:
@@ -24,7 +25,7 @@ func main() {
 
 		// default:
 		// 	fmt.Println(i)
-		// }
+		// 
 
 	// multiple condition switch
 	

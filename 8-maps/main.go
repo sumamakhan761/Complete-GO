@@ -9,7 +9,6 @@ func main(){
 		// creating map
 
 		// m:=make(map[string]string)
-
 		// adding an element
 		// m["name"] = "golang"
 		// m["area"] = "backend"
